@@ -13,6 +13,6 @@ def celsius(fahrenheit):
     cel= (fahrenheit-32) * (5/9)
     return cel
 
-#print(findarea(int(input())))
-#print(f"{totaldue(int(input()),float(input())):.2f}")
+print(findarea(int(input())))
+print(f"{totaldue(int(input()),float(input())):.2f}")
 print(f"{celsius(int(input())):.5f}")
