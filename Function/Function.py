@@ -1,14 +1,18 @@
+import math
+from math import pi
 
-
-
-def findArea(r):
-    area= 3.14 * (r^2)
+def findarea(r):
+    area= round(pi * (r**2),2)
     return area
 
-def totalDue (money,tax):
-    total=money + (money * tax)
+def totaldue(money,tax):
+    total=round(money+(money*tax),2)
     return total
 
-def celsius (fahrenheit ):
-    cel= (fahrenheit - 32) * (5/9)
+def celsius(fahrenheit):
+    cel= (fahrenheit-32) * (5/9)
     return cel
+
+#print(findarea(int(input())))
+#print(f"{totaldue(int(input()),float(input())):.2f}")
+print(f"{celsius(int(input())):.5f}")
